@@ -34,3 +34,16 @@ def encodeUrl(q):
         return s[:-1]
     else:
         print('Argument not a dictionary')
+
+# get domain
+def getDomain(u):
+    url = u.lower()
+    main = {'com':True,'co':True,'in':True,'org':True,'edu':True,
+            'net':True,'int':True,'gov':True,'mil':True}
+    sec = {'uk':True,'us':True,'in':True,'de':True,'au':True,
+            'fr':True,'it':True,'es':True}
+    temp = url.split('.')
+    if temp[-1] in main or temp[-1] in sec:
+        return temp[-1]
+    else:
+        return 'Sorry, URL cant be processed'
