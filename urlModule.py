@@ -18,10 +18,10 @@ def formatString(v):
         temp = v.split(' ')
         s = ''
         for t in temp:
-            s += t
-            return s[:-1]
+            s += t + '+'
+        return s[:-1]
     else:
-            return str(v)
+        return str(v)
 
 # urlencode
 def encodeUrl(q):
@@ -29,7 +29,8 @@ def encodeUrl(q):
         s = ''
         for k, v in q.items():
             s += k + '='
-            s += formatString(v) + '&'
+            s += formatString(v)
+            s += '&'
         return s[:-1]
     else:
         print('Argument not a dictionary')
