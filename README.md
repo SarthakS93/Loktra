@@ -9,7 +9,9 @@ Solution to 3 problems.
 3. Implement a Web Crawler.
     Made a python script to be run from terminal.
     Query 1: requires a single argument
-    python3 webCrawler.py <keyword>
+
+    eg.- python3 webCrawler.py <keyword>
 
     Query 2: requires 2 arguments
-    python3 webCrawler.py <page number> <keyword>
+    
+    eg.- python3 webCrawler.py <page number> <keyword>
